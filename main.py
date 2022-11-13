@@ -11,6 +11,7 @@ def main():
 #TODO:Prompt for players list
 #TODO:Build pods
 #TODO:Utility to start new season
+#TODO:cEDH toggle?
 
 
 
