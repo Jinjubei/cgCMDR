@@ -1,0 +1,27 @@
+number of people     |  pods
+     1               |  nan (special case)
+     2               |  nan (special case)
+     3               |  3
+     4               |  4
+     5               |  5   (special case)
+     6               |  3.3
+     7               |  4.3
+     8               |  4.4
+     9               |  3.3.3
+     10              |  4.3.3
+     11              |  4.4.3
+     12              |  4.4.4
+     13              |  4.3.3.3
+     14              |  4.4.3.3
+     15              |  4.4.4.3
+     16              |  4.4.4.4
+     17              |  4.4.3.3.3
+     18              |  4.4.4.3.3
+     19              |  4.4.4.4.3
+     20              |  4.4.4.4.4
+     21              |  4.4.4.3.3.3
+
+MATHS:
+4-n%4 = number of three man pods,m
+n-m = number divisble by 4,x
+x/4 = number of four man pods
