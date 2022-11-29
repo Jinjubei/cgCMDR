@@ -16,6 +16,8 @@ def importDB():
 
   print(players)
 
+def genPods(numPlayers):
+    return int(4 - numPlayers % 4), int((numPlayers - (4 - numPlayers % 4) * 3) / 4)
 
 #LIST OF FUNCTIONS TO WRITE
 #Prompt for players list
