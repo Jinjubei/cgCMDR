@@ -1,8 +1,9 @@
+import json
 import pandas as pd
 from multielo import MultiElo
 
-SHEET_ID = '1HPVsZ2BZ8rZIKK7biWq1johSrvlDN4nioLXX0stiNFY'
-SHEET_NAME = '2022Q4'
+# SHEET_ID = '1HPVsZ2BZ8rZIKK7biWq1johSrvlDN4nioLXX0stiNFY'
+# SHEET_NAME = '2022Q4'
 players = []
 elo = MultiElo()
 
@@ -15,8 +16,12 @@ def main():
 
 
 def fetchPlayerDB():
-    url = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet={SHEET_NAME}'
-    return pd.read_csv(url)
+    f = open('.\cgCMDR\playerDB.json')
+    jdata = json.load(f)
+    df = pd.DataFrame(jdata["players"])
+    return df
+    # url = f'https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet={SHEET_NAME}'
+    # return pd.read_csv(url)
 
 
 def numPods(numple):
